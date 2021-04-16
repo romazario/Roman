@@ -20,11 +20,7 @@ def printable(text, speed=0.08, cursor=0):
     for char in text:
         sleep(speed)
         print(char, end='')
-    if cursor == 1:
-        for i in '| | ':
-                sleep(0.5)
-                print(i, end='')
-                print('\x08', end='')
+
 
 printable('Введите ваше имя: ')
 
